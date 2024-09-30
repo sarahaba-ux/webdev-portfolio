@@ -22,7 +22,7 @@
     
             <nav>
                 <ul>
-                    <li><a href="{{ url('/') }}" class="button">Home</a></li>
+                    <li><a href="{{ url('/homepage') }}" class="button">Home</a></li>
                     <li><a href="{{ url('/about') }}" class="button">About</a></li>
                     <li><a href="{{ url('/content') }}"class="button">Content</a></li>
                     <li><a href="{{ url('/contact') }}" class="button">Contact</a></li>
