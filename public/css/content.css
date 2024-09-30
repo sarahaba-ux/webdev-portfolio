@@ -1,0 +1,276 @@
+  
+.cute-font {
+    font-family: 'Baloo 2', sans-serif;
+}
+
+body {
+    text-align: center;
+    font-family: 'Baloo 2', sans-serif;
+    background-color: #ffeef4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style for the header */
+header {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: #ff9fbf;
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+header .logo img {
+    height: 90px;
+    margin-left: 5px;
+    margin-right: 340px;
+    margin-bottom: -10px;
+    margin-top: -15px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+header nav ul li a:hover {
+    background-color: #95e6ffce;
+    border-radius: 10%;
+}
+
+header nav ul li a:active {
+    background-color: rgb(0, 0, 0);
+}
+
+.corner-image {
+    position: absolute;
+    top: -40px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    width: 100px; /* Adjust size as needed */
+    height: 120px; /* Maintain aspect ratio */
+}
+
+.simulation-container {
+    position: relative;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffeaf5;
+    border-radius: 10px;
+    box-shadow: 0px 30px 25px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+#scenario {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#choices button {
+    background-color: #ba005d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#choices button:hover {
+    background-color: #5ebcd8ce;
+}
+
+.journal-container {
+    margin-top: 20px;
+    width: 70%;
+    max-width: 600px;
+    padding: 40px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-image: url('/css/assets/images/bghomecard.jpg');
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#journal-cover {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e65f8c;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#journal-cover h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#journal-cover button {
+    background-color: #e65f8c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#journal-cover button:hover {
+    background-color: #5ebcd8ce;
+}
+
+#journal {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    min-height: 300px; 
+    max-width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #f7f5f0 0%, #f7f5f0 100%);
+    background-size: cover;
+}
+
+
+.left-page, .right-page {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 0.1) 1px, 
+        transparent 1px);
+    background-size: 100% 30px; 
+}
+
+.journal-center-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #333; 
+}
+
+#entry-left, #entry-right {
+    text-align: left;
+    font-family: 'Georgia', serif; 
+    line-height: 1.6;
+    position: relative;
+    z-index: 1; 
+}
+
+.left-page {
+    border-right: 1px dashed #333; 
+}
+
+.right-page {
+    border-left: none; 
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    color: #e65f8c;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    background-color: #ff9fbf;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 1350px;
+}
+
+header .button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff; /* Adjust as needed */
+}
+
+header .button i {
+    margin-left: 8px;
+    font-size: 16px; /* Adjust size as needed */
+}
+
+/* Example of hover effect */
+header .button:hover {
+    color: #d13469; /* Change color on hover */
+}
+
+/* Ensure that the cute font is applied */
+.cute-font {
+    font-family: 'Baloo 2', cursive;
+}
+
+/* Style for the welcome message */
+.welcome-message {
+    font-size: 12px; /* Adjust as needed */
+    text-align: right; /* Align text to the right */
+    margin-left: 300px; /* Adjust margin as needed */
+    color: #d13469; /* Color for the welcome message */
+    font-family: 'Baloo 2', cursive; /* Ensure the cute font is applied */
+}
+
+/* Style for the welcome message heading */
+.welcome-message h1 {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin: 0;
+}
+

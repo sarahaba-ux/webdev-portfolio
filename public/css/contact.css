@@ -1,0 +1,220 @@
+.cute-font {
+    font-family: 'Baloo 2', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6f3, #fffbc5, #ffe6f3);
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ff9fbf;
+    color: #fff;
+    padding: 5px 15px; /* Reduced padding */
+}
+
+header .logo img {
+    height: 90px; /* Smaller logo */
+    margin-right: 340px;
+    margin-bottom: -10px;
+    margin-top: -15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 15px; /* Reduced font size */
+}
+
+header nav ul li a:hover {
+    background-color: #95e6ffce; /* Change this to your desired hover color */
+    border-radius: 10%;
+}
+
+header nav ul li a:active {
+    background-color: rgb(0, 0, 0); /* Change this to your desired active color */
+}
+
+header nav ul li {
+    margin: 0 10px; /* Reduced space between menu items */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#hero {
+    background-image: url('/css/assets/images/bg01.png');
+    background-size: cover;
+    background-position: center;
+    padding: 180px 200px; /* Increase padding to push content down */
+}
+
+/* Contact Form Section */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: #e63b7a;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px ;
+  }
+  
+  .half {
+    flex: 1 1 45%;
+    padding: 10px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .image-container {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px; /* Adds space between form and image */
+  }
+  
+  .cf::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: none;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+
+  .submit-button {
+    border-radius: 10px;
+    box-shadow: #e63b7a;
+    background-color: #ff80aa;
+    color: #ffffff;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-top: 20px; /* Further increase margin-top to move the button down */
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e63b7a; /* Change this to your desired hover color */
+    color: #fff; /* Keeps the text white on hover */
+}
+
+
+/* Image Section */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-container, .image-container {
+      flex: 1 1 100%;
+      padding: 0;
+    }
+  
+    .image-container {
+      padding-top: 20px; /* Adds space between form and image on smaller screens */
+    }
+  }
+
+/* Footer Style */
+footer {
+    background-color: #ff9fbf;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header .button {
+  /* Existing button styles */
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff; /* Adjust as needed */
+}
+
+header .button i {
+  margin-left: 8px;
+  font-size: 16px; /* Adjust size as needed */
+}
+
+/* Example of hover effect */
+header .button:hover {
+  color: #d13469; /* Change color on hover */
+}
+
+/* Ensure that the cute font is applied */
+.cute-font {
+  font-family: 'Baloo 2', cursive;
+}
+/* Style for the welcome message */
+.welcome-message {
+  font-size: 12px; /* Default font size, adjust as needed */
+  text-align: right; /* Align text to the right */
+  margin-left: 300px;
+  color: #d13469; /* Color, adjust as needed */
+}
+
+/* Style for the welcome message heading */
+.welcome-message h1 {
+  font-size: 1.2em; /* Smaller font size for the heading */
+  margin: 0;
+}

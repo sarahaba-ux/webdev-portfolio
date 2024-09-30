@@ -1,0 +1,189 @@
+.cute-font {
+    font-family: 'Baloo 2', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6f3, #fffbc5, #ffe6f3);
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ff9fbf;
+    color: #fff;
+    padding: 5px 15px; /* Reduced padding */
+}
+
+header .logo img {
+    height: 90px; /* Smaller logo */
+    margin-right: 340px;
+    margin-bottom: -10px;
+    margin-top: -15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 15px; /* Reduced font size */
+}
+
+header nav ul li a:hover {
+    background-color: #95e6ffce; /* Change this to your desired hover color */
+    border-radius: 10%;
+}
+
+header nav ul li a:active {
+    background-color: rgb(0, 0, 0); /* Change this to your desired active color */
+}
+
+header nav ul li {
+    margin: 0 10px; /* Reduced space between menu items */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#hero {
+    background-image: url('/css/assets/images/bg01.png');
+    background-size: cover;
+    background-position: center;
+    padding: 180px 200px; /* Increase padding to push content down */
+}
+
+/* Image Section */
+#image-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px; /* Add padding to the section */
+}
+
+.image-container {
+    width: 45%; /* Each image takes up 45% of the container's width */
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px; /* Optional: Add rounded corners to the images */
+}
+
+/* Separate margin for left image */
+.image-container.left {
+    margin-top: 100px; /* Add a custom margin on the right for the left image */
+    margin-left: 30px;
+}
+
+.text-container{
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Title Container */
+.section-title-container {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space between title and grid */
+}
+
+.section-title {
+    background-color: #ff9fbf; /* Match this to the background color of the title */
+    color: white; /* Title text color */
+    padding: 10px 100px; /* Padding around the title */
+    border-radius: 15px; /* Optional: Add rounded corners */
+    font-size: 24px; /* Adjust font size as needed */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow to the title */
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+.grid-container .box {
+    width: 290px; /* Adjust the width to make the box smaller */
+    margin: -10px; /* Add margin for spacing between boxes */
+    padding: 5px; /* Adjust padding inside the box */
+    box-sizing: border-box;
+    background-color: #fff; /* Ensure the background is visible */
+    border-radius: 10px; /* Optional: Add some border radius for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Create a responsive grid */
+    gap: 30px; /* Adjust the space between the boxes */
+    justify-content: center;
+    background-color: #f0f8ff; /* Background color of the entire section */
+    padding: 70px; /* Adjust padding for space around the container */
+}
+/* Box */
+.box {
+    background-image: url('/css/assets/images/bghome1.png');
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Scale the image to cover the box */
+    background-position: center; /* Center the image within the box */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow to the box */
+    padding: 15px;
+    text-align: center; /* Center the text inside the box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.box-text {
+    padding: 30px;
+    margin-bottom: 20px; /* Add some space between text and image */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+footer {
+    background-color: #ff9fbf;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header .button {
+    /* Existing button styles */
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff; /* Adjust as needed */
+}
+
+header .button i {
+    margin-left: 8px;
+    font-size: 16px; /* Adjust size as needed */
+}
+
+/* Example of hover effect */
+header .button:hover {
+    color: #d13469; /* Change color on hover */
+}
+
+/* Welcome Message */
+.welcome-message {
+    margin-right: 500px; 
+    margin-left: 500px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #ffe6f3; 
+    color: #d470a4; 
+    padding: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    text-align: center; 
+    border-radius: 10px;
+}

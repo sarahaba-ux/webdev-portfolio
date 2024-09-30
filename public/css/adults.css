@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: 'Baloo 2', sans-serif;
+    animation: backgroundChange 10s infinite alternate; /* Animate indefinitely */
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes backgroundChange {
+    0% { background-color: #fffbc5; } /* Starting color */
+    50% { background-color: #ffc8e8; } /* Middle color */
+    100% { background-color: #fffbc5; } /* Ending color */
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+    position: relative; /* Ensure it's positioned correctly */
+    z-index: 2; /* Increase z-index to make sure it's on top */
+}
+
+.logo img {
+    max-width: 150px;
+    z-index: 2; /* Keep it on top */
+    position: relative;
+}
+.cat-container-wrapper {
+    position: relative;
+    margin-top: 150px; /* Adjust this to move both the cat and container lower together */
+    text-align: center;
+}
+
+.cat-holder {
+    position: relative; /* Allow absolute positioning of the cat */
+    height: 0; /* No height to avoid affecting layout */
+    text-align: center; /* Center content */
+}
+
+.cat-image {
+    position: absolute; /* Position the cat relative to the container */
+    bottom: -5%; /* Adjust this value to move the cat higher or lower */
+    top: -300px; /* Adjust this value to bring the cat closer to the container */
+    left: 50%;
+   
+    transform: translateX(-50%); /* Center the image horizontally */
+    width: 580px; /* Increase the size of the cat image */
+    z-index: 0; /* Ensure it's behind the login container */
+}
+
+.login-container {
+    background-color: #ffe6f3;
+    border-radius: 15px;
+    width: 320px; 
+    padding: 40px;
+    margin: 50px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for more depth */
+    position: relative; /* Position relative to allow z-index to work */
+    z-index: 1; /* Ensure it appears above the cat image */
+}
+
+
+/* Login Form Container */
+.login-container h2 {
+    text-align: center;
+    color: #d13469;
+    margin-bottom: 20px;
+    font-size: 24px; /* Slightly larger font size */
+}
+
+.login-container p {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 15px; /* Slightly larger font size */
+}
+
+.login-container label {
+    display: block;
+    color: #6b0024;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 90%; 
+    padding: 12px; 
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #d13469;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; /* Smooth transition on focus */
+    
+        position: relative; /* Ensure inputs are positioned correctly */
+        z-index: 3; /* Ensure inputs are above other elements */
+    
+
+}
+
+.login-container input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    outline: none;
+}
+
+/* Login Button */
+.login-container button {
+    width: 60%; 
+    padding: 14px;
+    background-color: #d13469;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    
+        position: relative; /* Ensure button is positioned correctly */
+        z-index: 3; /* Ensure button is above other elements */
+    }
+
+
+.login-container button:hover {
+    background-color: #6b0024;
+    transform: translateY(-2px); 
+}
+
+/* Redirect Button */
+.redirect-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redirect-container button {
+    padding: 10px 20px;
+    background-color: #d13469;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.redirect-container button:hover {
+    background-color: #6b0024;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
