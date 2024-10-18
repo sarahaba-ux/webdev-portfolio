@@ -10,8 +10,8 @@
             <h1 style="color: #e65f8c;"> ˚ʚ♡ɞ˚ </h1>
     
             <div id="journal-cover" style="color: #b6446a;">
-                <h2 style="color: #b6446a;">Mingkai's Journal</h2>
-                <p>Welcome to Mingkai's personal journal. <br>Click the button to open the journal.</p>
+                <h2 style="color: #b6446a;">Documentation Journal</h2>
+                <p>This is about my <b>'Laboratory 2: Routes'</b> <br>Click the button to open the journal.</p>
                 <button onclick="openJournal()">Open Journal</button>
             </div>
     
@@ -35,15 +35,53 @@
         <!-- JAVASCRIPT -->
         <script>
             const entries = [
-                { title: "K-Drama or Movie Time!", content: "I and Sarah loves K-dramas. We get snacks while we watch, usually our favorite ones. It’s kind of fun!" },
-                { title: "Preggy and Kittens Surprise!", content: "Tiny kittens arrived. They’re noisy but cute. My human’s very attentive." },
-                { title: "Kittens Exploring", content: "The kittens are starting to explore. They’re wobbly but curious, and it’s entertaining to watch." },
-                { title: "Meeting New Pets", content: "Met some new pets today. It’s a bit chaotic, but everyone seems to be getting along." },
-                { title: "Spaying Day", content: "Had a vet visit and feel different now. Lots of extra cuddles while I recover." },
-                { title: "New Fave Video", content: "Found a video on YouTube that Sarah shared. It’s all about rats and cockroaches! I can't stop watching!" },
-                { title: "Midnight Zoomies", content: "I decided to have midnight zoomies, and Sarah and I both got scolded because I was too noisy. Hehe!" },
-                { title: "Gift Sarah", content: "Today I decided to gift Sarah some lizards, thinking maybe she was hungry. She screamed, so I think she’s happy. :))" },
-            ];
+    {
+        title: "Creating the Homepage Route",
+        content: 
+        "I started by creating a simple route that returns a view for the homepage. The view displays a welcome message. " +
+        "In the Homepage Blade Template <b>(homepage.blade.php)</b>, I crafted a straightforward Blade view where the welcome message is displayed. This message is passed to the view through the controller."
+    },
+    {
+        title: "Controller Logic for Welcome Message",
+        content: 
+        "In the <b>LoginController</b>, I implemented a method called <code>homepage()</code>, which retrieves the username from the request and passes it to the view. " +
+        "This function checks if a username is present in the URL or request, defaulting to 'Guest' if not provided, ensuring a personalized experience."
+    },
+    {
+        title: "Route Logic in web.php",
+        content: 
+        "In the <code>web.php</code> file, the <code>Route::get()</code> functions map HTTP GET requests to specific controller methods. " +
+        "This configuration ensures that the personalized message <b>('Welcome, [username]')</b> is displayed when a user visits the homepage, handling cases where a username is not provided."
+    },
+    {
+        title: "Creating Additional Routes",
+        content: 
+        "I created additional routes to return a view for an <b>'About Us'</b> page, linking the <code>/about</code> URL to the about method in the LoginController. " +
+        "I also set up a redirect from <code>/home</code> to <code>/</code>, directing users to the homepage, which prevents <b>404 errors.</b>"
+    },
+    {
+        title: "Using Route Parameters",
+        content: 
+        "I defined a route with a required parameter, <code>{username}</code>, which allows for routes like <code>/user/johndoe</code> to pass the username to the userProfile method. " +
+        "Additionally, I included an optional parameter <code>{username?}</code> to default to 'guest' when no username is provided."
+    },
+    {
+        title: "Regular Expression Constraints",
+        content: 
+        "To enforce validation on route parameters, I applied regular expression constraints. The <code>where()</code> method ensures only alphabetic characters are accepted, enhancing security and integrity."
+    },
+    {
+        title: "Server-side Validation",
+        content: 
+        "In the controller, I implemented a server-side validation rule of <code>'nullable|alpha'</code>. This ensures the username can be null or, if provided, must consist only of alphabetic characters, maintaining robustness."
+    },
+    {
+        title: "Summary",
+        content: 
+        "This documentation outlines the steps taken in the WebDev_Lab2 project, detailing the creation of routes, controller logic, and validation methods. " +
+        "The project structure effectively supports a personalized user experience while ensuring data integrity and security throughout."
+    }
+];
 
             let currentLeftEntry = 0;
             let currentRightEntry = 1;

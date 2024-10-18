@@ -10,6 +10,10 @@ body {
     background: linear-gradient(135deg, #ffe6f3, #fffbc5, #ffe6f3);
 }
 
+.p{
+    color: black;
+}
+
 /* Header and Navigation */
 header {
     display: flex;
@@ -128,8 +132,6 @@ header nav ul {
 }
 /* Box */
 .box {
-    background-image: url('/css/assets/images/bghome1.png');
-    background-repeat: no-repeat; /* Prevent the image from repeating */
     background-size: cover; /* Scale the image to cover the box */
     background-position: center; /* Center the image within the box */
     border-radius: 15px;
@@ -140,6 +142,7 @@ header nav ul {
 }
 
 .box-text {
+    color: black;
     padding: 30px;
     margin-bottom: 20px; /* Add some space between text and image */
 }
@@ -157,7 +160,6 @@ footer {
 }
 
 header .button {
-    /* Existing button styles */
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -174,16 +176,73 @@ header .button:hover {
     color: #d13469; /* Change color on hover */
 }
 
-/* Welcome Message */
-.welcome-message {
-    margin-right: 500px; 
-    margin-left: 500px; 
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #ffe6f3; 
-    color: #d470a4; 
-    padding: 5px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-    text-align: center; 
-    border-radius: 10px;
+/* Profile Image */
+.profile-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Keep it square for the circular effect */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the area */
+    border: 3px solid #ff9fbf; /* Optional: Add a border around the image */
+    position: relative; /* Position relative for the background effect */
+    z-index: 2; /* Ensure it stays above the background */
+}
+
+/* Intro Section */
+#intro-section {
+    position: relative; /* Position relative for stacking context */
+    background-image: url('/css/assets/pics/bg.jpg'); /* Background image */
+    background-size: cover; /* Cover the section */
+    background-position: center; /* Center the background */
+    padding: 100px 0; /* Adjust padding to create space */
+    color: #4a4a4a;
+}
+
+#intro-section::before {
+    content: ""; /* Required for the pseudo-element */
+    position: absolute; /* Positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+    z-index: 1; /* Position it below the text and image */
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center; /* Center the container */
+    align-items: center;
+    flex-direction: column; /* Stack the content vertically */
+}
+
+.text-container {
+    text-align: center;
+    margin-top: 20px; /* Space between image and text */
+    z-index: 2; /* Make sure text is above the overlay */
+    color: #fff; /* Change text color to white for better visibility */
+}
+
+/* Optional: Add a slight shadow to the profile image */
+.profile-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button1-container {
+    display: flex;
+    gap: 5px; /* Space between buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.button1 {
+    padding: 5px 8px; /* Reduced padding for smaller buttons */
+    background-color: #d13469; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none;
+    border-radius: 3px; /* Slightly rounded corners */
+    font-size: 0.9em; /* Smaller font size */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.button1:hover {
+    background-color: #a52452; /* Darker shade on hover */
 }

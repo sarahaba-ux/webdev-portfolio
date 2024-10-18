@@ -10,8 +10,8 @@
             <h1 style="color: #e65f8c;"> ˚ʚ♡ɞ˚ </h1>
     
             <div id="journal-cover" style="color: #b6446a;">
-                <h2 style="color: #b6446a;">Mingkai's Journal</h2>
-                <p>Welcome to Mingkai's personal journal. <br>Click the button to open the journal.</p>
+                <h2 style="color: #b6446a;">Documentation Journal</h2>
+                <p>This is about my <b>'Laboratory 1: Setup'</b> <br>Click the button to open the journal.</p>
                 <button onclick="openJournal()">Open Journal</button>
             </div>
     
@@ -35,14 +35,22 @@
         <!-- JAVASCRIPT -->
         <script>
             const entries = [
-                { title: "K-Drama or Movie Time!", content: "I and Sarah loves K-dramas. We get snacks while we watch, usually our favorite ones. It’s kind of fun!" },
-                { title: "Preggy and Kittens Surprise!", content: "Tiny kittens arrived. They’re noisy but cute. My human’s very attentive." },
-                { title: "Kittens Exploring", content: "The kittens are starting to explore. They’re wobbly but curious, and it’s entertaining to watch." },
-                { title: "Meeting New Pets", content: "Met some new pets today. It’s a bit chaotic, but everyone seems to be getting along." },
-                { title: "Spaying Day", content: "Had a vet visit and feel different now. Lots of extra cuddles while I recover." },
-                { title: "New Fave Video", content: "Found a video on YouTube that Sarah shared. It’s all about rats and cockroaches! I can't stop watching!" },
-                { title: "Midnight Zoomies", content: "I decided to have midnight zoomies, and Sarah and I both got scolded because I was too noisy. Hehe!" },
-                { title: "Gift Sarah", content: "Today I decided to gift Sarah some lizards, thinking maybe she was hungry. She screamed, so I think she’s happy. :))" },
+                { title: "Installing Laravel", content: "I started by installing Laravel, which was quite straightforward. I made sure to follow the official documentation for the best practices." },
+                { title: "Configuring Laravel", content: "Next, I dove into the configuration settings. This step involved setting up my .env file to include my database connection details, which felt like a crucial part of the process." },
+                { title: "Creating a Project", content: "Creating a new Laravel project was exciting! I used the command line to generate the project skeleton." },
+                { title: "Editing PHP Files", content: "As I began editing the PHP files, I paid special attention to the 'variables_order'. Ensuring it included 'GPCS' was vital for maintaining compatibility with Laravel." },
+                { title: "Setting Up Git Repository", content: "I decided to put my Laravel project in a Git repository. I created a new repository on GitHub and added it as a remote to my local project." },
+                { title: "Creating Views", content: "With the setup done, I moved on to creating views for my application, specifically the Homepage, About, and Content pages." },
+                { title: "Running Routes", content: "Next up was creating and running routes in my Laravel application. I had to edit 'web.php' to build connections and ensure everything was flowing smoothly." },
+                { title: "Starting the Laravel Server", content: "After setting up my routes, I started the Laravel server. I was eager to test everything out." },
+                { title: "Testing Routes", content: "Visiting the URLs in my browser was thrilling! I checked both 'localhost:8000' and '127.0.0.1:8000' to see my work in action." },
+                { title: "Navigating the Pages", content: "Lastly, I focused on the navigation bar on my homepage. It was crucial to have buttons that allowed seamless navigation between the Home, About, and Content pages." },
+                { title: "Final Output:", content: "After all the hard work, I finally saw my final output! It felt rewarding to see everything come together—Home, About, and Content were functioning perfectly. <br><br><b>It is titled 'Mingkai's Life'</b>" },
+                { title: " ", content: 
+        '<img src="/css/assets/pics/individual.png" alt="Image 1" style="width:100%; max-width:600px;">' +
+        '<img src="/css/assets/pics/individual1.png" alt="Image 2" style="width:100%; max-width:600px;">' +
+        '<img src="/css/assets/pics/individual2.png" alt="Image 3" style="width:100%; max-width:600px;">'
+    }
             ];
 
             let currentLeftEntry = 0;

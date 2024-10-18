@@ -17,15 +17,16 @@
         <header>
 
             <div class="logo">
-                <img src="/css/assets/images/logo.png" alt="Logo">
+                <img src="/css/assets/pics/logo.png" alt="Logo">
             </div>
     
             <nav>
                 <ul>
                     <li><a href="{{ url('/homepage') }}" class="button">Home</a></li>
-                    <li><a href="{{ url('/about') }}" class="button">About</a></li>
-                    <li><a href="{{ url('/content') }}"class="button">Content</a></li>
-                    <li><a href="{{ url('/contact') }}" class="button">Contact</a></li>
+                    <li><a href="{{ url('/lab1') }}" class="button">Laboratory 1</a></li>
+                    <li><a href="{{ url('/lab2') }}"class="button">Laboratory 2</a></li>
+                    <li><a href="{{ url('/lab3') }}" class="button">Laboratory 3</a></li>
+                    <li><a href="{{ url('/lab4') }}" class="button">Laboratory 4</a></li>
                 </ul>
             </nav>
         </header>

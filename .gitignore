@@ -2,9 +2,11 @@
 /node_modules
 /public/build
 /public/hot
+/public/promise.json
 /public/storage
 /storage/*.key
 /vendor
+/.env
 .env.backup
 .env.production
 .phpactor.json

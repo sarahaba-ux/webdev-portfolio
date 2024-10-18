@@ -4,20 +4,30 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Log;
 
 class LogRequests
 {
     /**
      * Handle an incoming request.
      *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next)
     {
-        $logData = 'URL: ' . $request->url() . ' | Method: ' . $request->method() . ' | Timestamp: ' . now()->format('Y-m-d H:i:s') . PHP_EOL;
-        Storage::append('LogReqLab4/log.txt', $logData); 
+        // Prepare log entry
+        $logEntry = sprintf(
+            "[%s] %s %s\n",
+            now()->toDateTimeString(),
+            $request->method(),
+            $request->fullUrl()
+        );
+
+        // Log to log.txt
+        file_put_contents(storage_path('logs/log.txt'), $logEntry, FILE_APPEND);
+
         return $next($request);
     }
 }
